@@ -1,0 +1,20 @@
+// The Round Table
+digraph {
+	A [label=main]
+	B [label=load_data]
+	C [label=split]
+	D [label=plot_metrics]
+	E [label="Classifier Selection"]
+	F [label="SVM Settings"]
+	G [label="Logistic Regression Settings"]
+	H [label="Random Forest Settings"]
+	I [label="Show Raw Data"]
+	A -> B
+	A -> C
+	A -> D
+	A -> E
+	E -> F [label=SVM]
+	E -> G [label="Logistic Regression"]
+	E -> H [label="Random Forest"]
+	E -> I [label="Raw Data"]
+}
